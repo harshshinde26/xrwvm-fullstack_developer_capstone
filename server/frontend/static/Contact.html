@@ -1,0 +1,117 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        #contact-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #contact-banner img {
+            width: 100%;
+            height: auto;
+            max-height: 400px; /* Prevents image from getting too large */
+            object-fit: cover;
+        }
+
+        #contact-icon-info-box {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        #contact-icon-box {
+            margin-right: 40px; /* Space between the icon and info */
+        }
+        
+        #contact-us {
+            height: auto;
+            max-height: 250px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        #contact-info-box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .label {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #333;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        .link {
+            font-size: 1rem;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+        <div class="container-fluid">
+            <h2 style="padding-right: 5%;">Dealerships</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="page-container">
+        <div id="contact-container">
+            <div id="contact-banner">
+                <img src="/static/cars.jpeg" alt="Card image">
+            </div>
+            <div id="contact-icon-info-box">
+                <div id="contact-icon-box">
+                    <img id="contact-us" src="/static/contactus.png" alt="Card image">
+                </div>
+                <div id="contact-info-box">
+                    <p class="label">Contact Customer Service</p>
+                    <p class="link">support@greatcars.com</p>
+                    <p class="label">Contact our Advertising team</p>
+                    <p class="link">NationalSales@greatcars.com</p>
+                    <p class="label">Contact our Public Relations team</p>
+                    <p class="link">PR@greatcars.com</p>
+                    <p class="label">Contact the greatcars.com offices</p>
+                    <p class="link">588-555-1671</p>
+                    <p class="label">Become a greatcars.com car dealer</p>
+                    <p class="label">Visit growwithgreatcars.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
